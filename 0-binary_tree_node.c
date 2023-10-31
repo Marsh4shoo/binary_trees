@@ -1,23 +1,16 @@
-/*
- * binary_tree_node_zvinoira.c - A binary tree node implementation by Marshal Zvinoira.
- */
-
 #include "binary_trees.h"
 
 /**
- * binary_tree_node_zvinoira - Creates a binary tree node.
- * @parent: A pointer to the parent of the node to create.
+ * binary_tree_node_new - Creates a new binary tree node.
+ * @parent: A pointer to the parent node of the new node.
  * @value: The value to put in the new node.
  *
- * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the new node.
+ * Return: A pointer to the new node, or NULL on error.
  */
-
-binary_tree_t *binary_tree_node_zvinoira(binary_tree_t *parent, int value)
+binary_tree_t *binary_tree_node_new(binary_tree_t *parent, int value)
 
 {
     binary_tree_t *new_node = malloc(sizeof(binary_tree_t));
-
     if (new_node == NULL) {
         return
  
