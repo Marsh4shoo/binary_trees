@@ -8,10 +8,10 @@ void pop(levelorder_queue_t **head);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
 /**
- * create_node - Creates a new levelorder_queue_t node.
- * @node: The binary tree node for the new node to contain.
+ * create_node - Creates a New levelorder_queue_t node.
+ * @node: The Binary Tree Node For the New node to contain.
  *
- * Return: If an error occurs, NULL.
+ * Return: If an Error Occurs, NULL.
  *         Otherwise, a pointer to the new node.
  */
 levelorder_queue_t *create_node(binary_tree_t *node)
@@ -29,8 +29,8 @@ levelorder_queue_t *create_node(binary_tree_t *node)
 }
 
 /**
- * free_queue - Frees a levelorder_queue_t queue.
- * @head: A pointer to the head of the queue.
+ * free_queue - Frees A levelorder_queue_t queue.
+ * @head: A pointer to The Head Of The queue.
  */
 void free_queue(levelorder_queue_t *head)
 {
@@ -45,14 +45,14 @@ void free_queue(levelorder_queue_t *head)
 }
 
 /**
- * pint_push - Runs a function on a given binary tree node and
- *             pushes its children into a levelorder_queue_t queue.
- * @node: The binary tree node to print and push.
- * @head: A double pointer to the head of the queue.
- * @tail: A double pointer to the tail of the queue.
- * @func: A pointer to the function to call on @node.
+ * pint_push - Runs a Function on A Given binary Tree Node and
+ *             Pushes its children into A levelorder_queue_t queue.
+ * @node: The Bbinary Tree node To Print and push.
+ * @head: A double Pointer to The Head of the queue.
+ * @tail: A double Pointer to the tail of the queue.
+ * @func: A pointer To the function to call on @node.
  *
- * Description: Upon malloc failure, exits with a status code of 1.
+ * Description: Upon malloc Failure, exits with a status code of 1.
  */
 void pint_push(binary_tree_t *node, levelorder_queue_t *head,
 		levelorder_queue_t **tail, void (*func)(int))
@@ -85,8 +85,8 @@ void pint_push(binary_tree_t *node, levelorder_queue_t *head,
 }
 
 /**
- * pop - Pops the head of a levelorder_queue_t queue.
- * @head: A double pointer to the head of the queue.
+ * pop - Pops the Head Of A levelorder_queue_t queue.
+ * @head: A double Pointer to the head of the queue.
  */
 void pop(levelorder_queue_t **head)
 {
@@ -98,7 +98,7 @@ void pop(levelorder_queue_t **head)
 }
 
 /**
- * binary_tree_levelorder - Traverses a binary tree using
+ * binary_tree_levelorder - Traverses A Binary tree using
  *                          level-order traversal.
  * @tree: A pointer to the root node of the tree to traverse.
  * @func: A pointer to a function to call for each node.
